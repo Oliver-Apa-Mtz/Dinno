@@ -1,0 +1,130 @@
+.banner-principal{
+	position: relative;
+	padding: 180px 0;
+	margin-top: 50px;
+}
+.banner-principal__text {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: center;
+}
+.banner-principal__text--primary {
+	width: 100%;
+	margin: 20px auto;
+}
+.banner-principal__text--secondary{
+	width: 100%;
+	max-width: 600px;
+	margin: 30px auto 40px;
+}
+.banner-principal__buttons{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.efect__one{
+	opacity: 1;
+	transform: perspective(1200px);
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 10px;
+	height: 670px;
+	justify-content: center;
+	left: calc(69.84375000000003% - 772px / 2);
+	overflow: visible;
+	padding: 0;
+	position: absolute;
+	top: -400px;
+	transform: perspective(1200px);
+	width: 772px;
+	z-index: 0;
+}
+.efect__one--1 {
+	-webkit-filter: blur(90px);
+	background-color: #371ae7;
+	border-radius: 100%;
+	filter: blur(90px);
+	flex: none;
+	height: 618px;
+	position: absolute;
+	right: -283px;
+	top: 0;
+	width: 838px;
+	z-index: 1;
+}
+.efect__one--2 {
+	-webkit-filter: blur(82px);
+	background-color: #371ae7;
+	border-radius: 50%;
+	filter: blur(82px);
+	flex: none;
+	height: 514px;
+	left: -310px;
+	position: absolute;
+	top: 31px;
+	width: 791px;
+	z-index: 1;
+}
+.efect__two {
+	opacity: 1;
+	transform: perspective(1200px);
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 10px;
+	height: 670px;
+	justify-content: center;
+	left: calc(18.046875000000025% - 772px / 2);
+	overflow: visible;
+	padding: 0;
+	position: absolute;
+	top: -400px;
+	transform: perspective(1200px);
+	width: 772px;
+	z-index: 0;
+}
+.efect__two--1 {
+	-webkit-filter: blur(76px);
+	background-color: #f8ff37;
+	border-radius: 100%;
+	filter: blur(76px);
+	flex: none;
+	height: 523px;
+	position: absolute;
+	right: 268px;
+	top: 119px;
+	width: 536px;
+	z-index: 1;
+}
+.efect__two--2 {
+	-webkit-filter: blur(95px);
+	background-color: #02ed2a;
+	border-radius: 100%;
+	filter: blur(95px);
+	flex: none;
+	height: 345px;
+	overflow: hidden;
+	position: absolute;
+	right: 62px;
+	top: 123px;
+	width: 345px;
+	will-change: transform;
+	z-index: 1;
+}
+.title__one{
+	font-size: 7.2rem;
+	line-height: 1.1;
+}
+.text{
+	font-size: 2rem;
+}

@@ -1,0 +1,31 @@
+.button{
+	width: max-content;
+	height: auto;
+	padding: 14px 24px;
+	border-radius: 10px;
+	transition: all .3s;
+	font-family: "Be Vietnam Pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+.button--primary{
+	background-color: white;
+	border: 1px solid #573CFF;
+	color: #573CFF;
+}
+.button--primary:hover {
+	background-color: #573CFF;
+	color: white;
+}
+.button--secondary {
+	background-color: #573CFF;
+	border: 1px solid #573CFF;
+	color: white;
+}
+
+.button--secondary:hover {
+	background-color: white;
+	color: #573CFF;
+}
