@@ -2,6 +2,7 @@
 	position: relative;
 	padding: 180px 0;
 	margin-top: 50px;
+	min-height: calc(100vh - 50px);
 }
 .banner-principal__text {
 	position: relative;
@@ -123,6 +124,10 @@
 }
 .title__one{
 	font-size: 7.2rem;
+	line-height: 1.1;
+}
+.title__one--big {
+	font-size: 10rem;
 	line-height: 1.1;
 }
 .text{
