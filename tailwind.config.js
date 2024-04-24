@@ -8,7 +8,7 @@ export default {
 				secundario: "#573CFF",
 				white: "#FFFFFF",
 				text: "#4E5774",
-				gray: "#F8F6F4",
+				gray: "#F3F7FB",
 			},
 		},
 	},

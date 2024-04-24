@@ -1,8 +1,11 @@
 .banner-principal{
 	position: relative;
+	padding: 80px 0;
+	min-height: calc(100vh - 50px);
+}
+.banner-principal--custom{
 	padding: 180px 0;
 	margin-top: 50px;
-	min-height: calc(100vh - 50px);
 }
 .banner-principal__text {
 	position: relative;
@@ -14,12 +17,21 @@
 }
 .banner-principal__text--primary {
 	width: 100%;
+	max-width: 800px;
 	margin: 20px auto;
 }
 .banner-principal__text--secondary{
 	width: 100%;
 	max-width: 600px;
 	margin: 30px auto 40px;
+}
+.banner-principal__text--extra {
+	width: 100%;
+	max-width: 600px;
+	margin: 0px auto;
+}
+.banner-principal__text--large{
+	max-width: 800px;
 }
 .banner-principal__buttons{
 	display: flex;
@@ -132,4 +144,14 @@
 }
 .text{
 	font-size: 2rem;
+}
+
+@media only screen and (max-width: 640px) {
+	.banner-principal{
+		min-height: 100vh;
+	}
+	.title__one--big {
+		font-size: 4rem;
+		line-height: 1.1;
+	}
 }
