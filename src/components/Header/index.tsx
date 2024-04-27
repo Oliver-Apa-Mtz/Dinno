@@ -15,7 +15,7 @@ const Header = () => {
 					<div className="header__nav__item text-white">Blog</div>
 				</div>
 				<div className='header__buttons'>
-					<Button text={'Solícita un Demo'} type={'primary'} />
+					<Button text={'Solícita un Demo'} type={'primary'} action={() => { }} />
 				</div>
 			</div>
 		</div>
