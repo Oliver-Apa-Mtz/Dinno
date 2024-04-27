@@ -17,7 +17,7 @@ const BannerText = ({ title, subtitle, text, buttonsDemo, size }: IProps) => {
 					</h2>
 				)}
 				{title && (
-					<h1 className='banner-principal__text--primary poppins-medium title__one text-principal'>
+					<h1 className={`banner-principal__text--primary poppins-medium text-principal ${subtitle ? 'title__one' : 'title__one--small'}`}>
 						{title}
 					</h1>
 				)}
@@ -28,8 +28,8 @@ const BannerText = ({ title, subtitle, text, buttonsDemo, size }: IProps) => {
 				)}
 				{buttonsDemo && (
 					<div className='banner-principal__buttons'>
-						<Button text={'Conócenos'} type={'primary'} />
-						<Button text={'Solícita un Demo'} type={'secondary'} />
+						<Button text={'Conócenos'} type={'primary'} action={() => { }} />
+						<Button text={'Solícita un Demo'} type={'secondary'} action={() => { }} />
 					</div>
 				)}
 			</div>

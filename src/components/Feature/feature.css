@@ -1,0 +1,13 @@
+.FeatureItem{
+	width: 100%;
+	max-width: 370px;
+}
+.FeatureItem__circle{
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+	background: linear-gradient(131deg, rgb(87, 60, 255) 0%, hsl(221, 100%, 61%) 100%);
+}
+.FeatureItem h5{
+	min-height: 60px;
+}

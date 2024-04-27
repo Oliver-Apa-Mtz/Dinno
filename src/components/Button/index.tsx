@@ -3,12 +3,16 @@ import './button.css';
 interface IProps {
 	text: string;
 	type: string;
+	action: () => void;
+	position?: string;
 }
-const Button = ({ text, type }: IProps) => {
+const Button = ({ text, type, action, position = 'center' }: IProps) => {
 	return (
-		<div className={`button button--${type}`}>
-			<div>
-				{text}
+		<div className={`flex items-center ${position === 'center' ? 'justify-center' : position === 'right' ? 'justify-end' : 'justify-start'}`}>
+			<div className={`button button--${type}`} onClick={() => action()}>
+				<div>
+					{text}
+				</div>
 			</div>
 		</div>
 	)

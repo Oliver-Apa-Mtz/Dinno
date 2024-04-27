@@ -4,7 +4,7 @@ const Building = () => {
 
 	return (
 		<div>
-			<div className='banner-principal bg-gray flex items-center'>
+			<div className='banner-principal bg-gray flex items-center' style={{ height: '100vh' }}>
 				<div className='efect__one'>
 					<div className='efect__one--1'></div>
 					<div className='efect__one--2'></div>

@@ -1,10 +1,9 @@
 .banner-principal{
 	position: relative;
-	padding: 80px 0;
-	min-height: calc(100vh - 50px);
+	padding: 80px 0 0px;
 }
 .banner-principal--custom{
-	padding: 180px 0;
+	padding: 180px 0 80px;
 	margin-top: 50px;
 }
 .banner-principal__text {
@@ -142,8 +141,27 @@
 	font-size: 10rem;
 	line-height: 1.1;
 }
+.title__one--small{
+	font-size: 6rem;
+	line-height: 1.1;
+}
 .text{
-	font-size: 2rem;
+	font-size: 1.8rem;
+}
+.banner-features{
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	text-align: center;
+}
+.banner-features .FeatureItem{
+	width: 30%;
+}
+.banner-testimonial{
+	margin-top: 100px;
+	background: linear-gradient(180deg, #ecf1f7 0%, rgba(243, 247, 251, 0) 100%);
 }
 
 @media only screen and (max-width: 640px) {

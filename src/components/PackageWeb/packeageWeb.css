@@ -1,0 +1,9 @@
+.packageWeb{
+	width: 100%;
+	max-width: 1200px;
+	padding: 80px 20px 60px;
+	margin: 0px auto;
+}
+.packageWeb > div{
+	width: 50%;
+}

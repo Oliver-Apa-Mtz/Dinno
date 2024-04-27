@@ -3,6 +3,8 @@
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
+	position: relative;
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 95%);
 }
 .sliderMarcas__container{
 	margin-bottom: 80px;
