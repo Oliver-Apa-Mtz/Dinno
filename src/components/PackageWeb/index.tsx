@@ -7,7 +7,7 @@ interface IProps {
 	chipText: string;
 	title: string;
 	description: string;
-	action: () => void;
+	action: string;
 	nameAction: string;
 	image: string;
 }
@@ -19,10 +19,10 @@ const PackageWeb = ({ order, chipText, title, description, action, nameAction, i
 				<Chip title={chipText} light={true} direction={`${order === 2 ? 'right' : ''}`} />
 				<h4 className={`poppins-medium text-principal my-10 text-7xl leading-tight ${order === 1 ? 'pr-5' : 'pl-5'}`}>{title}</h4>
 				<p className='be-vietnam-light text text-text mb-10'>{description}</p>
-				<Button text={nameAction} type={'primary'} action={() => action()} position={order === 2 ? 'right' : ''} />
+				<Button text={nameAction} type={'primary'} action={action} position={order === 2 ? 'right' : ''} />
 			</div>
-			<div className={`${order === 1 ? 'order-2 pl-10' : 'order-1 pr-10'}`}>
-				<div>
+			<div className={`${order === 1 ? 'order-2 pl-10 justify-end' : 'order-1 pr-10'} flex items-center`}>
+				<div className='packageWeb__image'>
 					<img src={image} alt="image" />
 				</div>
 			</div>

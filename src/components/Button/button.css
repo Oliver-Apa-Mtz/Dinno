@@ -27,8 +27,17 @@
 	border: 1px solid #573CFF;
 	color: white;
 }
-
 .button--secondary:hover {
 	background-color: white;
 	color: #573CFF;
+}
+.button--third {
+	background-color: white;
+	border: 1px solid #573CFF;
+	color: #573CFF;
+}
+.button--third:hover{
+	background-color: #F3F7FB;
+	color: #573CFF;
+	padding: 14px 30px;
 }

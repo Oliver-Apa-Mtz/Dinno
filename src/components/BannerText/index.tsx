@@ -28,8 +28,8 @@ const BannerText = ({ title, subtitle, text, buttonsDemo, size }: IProps) => {
 				)}
 				{buttonsDemo && (
 					<div className='banner-principal__buttons'>
-						<Button text={'Conócenos'} type={'primary'} action={() => { }} />
-						<Button text={'Solícita un Demo'} type={'secondary'} action={() => { }} />
+						<Button text={'Conócenos'} type={'primary'} action={'caracteristicas'} />
+						<Button text={'Solícita un Demo'} type={'secondary'} action={'contacto'} />
 					</div>
 				)}
 			</div>

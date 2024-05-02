@@ -1,0 +1,16 @@
+.footer{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px 40px;
+}
+.footer__logo {
+	width: 30%;
+	font-size: 3rem;
+}
+.footer__nav{
+	width: 50%;
+}
+.footer__company{
+	width: 20%;
+}

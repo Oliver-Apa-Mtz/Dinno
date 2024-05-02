@@ -17,5 +17,8 @@
 	width: 64px;
 	height: 64px;
 	border-radius: 50%;
-	background: black;
+	background: white;
+}
+.sliderTestimonial__item__circle img{
+	max-width: 60%;
 }

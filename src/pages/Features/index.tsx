@@ -1,22 +1,19 @@
 
-import './home.css';
+import '../Home/home.css';
 import Layout from '../../components/Layout';
 import BannerText from '../../components/BannerText';
 import Chip from '../../components/Chips';
 import PackageWeb from '../../components/PackageWeb';
 import FeatureItem from '../../components/Feature';
 import BannerCall from '../../components/BannerCall';
-import Metrics from '../../components/Metrics';
-import SliderTestimonial from '../../components/SliderTestimonial';
-import Questions from '../../components/Questions';
 
 import Product1 from '../../assets/img/sitio-1.png';
 import Product2 from '../../assets/img/sitio-2.png';
 import Product3 from '../../assets/img/sitio-3.png';
 
-import { Textos, TextServices, TextFeature, DataTestimonial, DataQuestions } from '../../utils/textos';
+import { Textos, TextServices, TextFeature } from '../../utils/textos';
 
-const Home = () => {
+const Features = () => {
 
 	return (
 		<Layout>
@@ -32,21 +29,13 @@ const Home = () => {
 							<div className='efect__two--2'></div>
 						</div>
 						<BannerText
-							subtitle={Textos.main.subtitle}
-							title={Textos.main.title}
-							text={Textos.main.text}
+							title={TextServices.title}
+							text={TextServices.text}
 							buttonsDemo={true}
 						/>
 					</div>
 
-					<div className='banner-principal'>
-						<Chip title={'Paquetes'} light={true} direction={'center'} />
-						<BannerText
-							title={Textos.about.title}
-							text={Textos.about.text}
-							buttonsDemo={false}
-							size={'large'}
-						/>
+					<div>
 						<PackageWeb
 							order={1}
 							chipText='Básico'
@@ -62,7 +51,7 @@ const Home = () => {
 							title={TextServices.enterprise.title}
 							description={TextServices.enterprise.text}
 							nameAction='Solícita un Demo'
-							action={'contacto'}
+							action={''}
 							image={Product2}
 						/>
 						<PackageWeb
@@ -71,7 +60,7 @@ const Home = () => {
 							title={TextServices.premium.title}
 							description={TextServices.premium.text}
 							nameAction='Solícita un Demo'
-							action={'contacto'}
+							action={''}
 							image={Product3}
 						/>
 					</div>
@@ -98,37 +87,9 @@ const Home = () => {
 								)
 							})}
 						</div>
-
-						<div>
-							<BannerCall />
-						</div>
-					</div>
-
-					<div className='banner-principal'>
-						<div>
-							<Chip title={'Números'} light={true} direction={'center'} />
-							<Metrics />
-						</div>
-					</div>
-
-					<div className='banner-principal banner-testimonial'>
-						<div>
-							<Chip title={'Testimonios'} light={false} direction={'center'} />
-							<h2 className={`banner-principal__text--primary poppins-medium text-principal title__one--small text-center`}>
-								Nuestros clientes
-							</h2>
-							<SliderTestimonial data={DataTestimonial} />
-						</div>
 					</div>
 
 					<div>
-						<div>
-							<Chip title={'¿Dudas?'} light={true} direction={'center'} />
-							<h2 className={`banner-principal__text--primary poppins-medium text-principal title__one--small text-center`}>
-								Preguntas frecuentes
-							</h2>
-							<Questions data={DataQuestions} />
-						</div>
 						<div>
 							<BannerCall />
 						</div>
@@ -139,4 +100,4 @@ const Home = () => {
 	)
 }
 
-export default Home
+export default Features

@@ -10,7 +10,7 @@ const BannerCall = () => {
 					<p className='be-vietnam-light text text-white'>Destaca entre la competencia y llega a más clientes con nuestros servicios de desarrollo web. Diseños atractivos, funcionalidades avanzadas y soporte experto: ¡haz que tu sitio web sea inolvidable con DINNO!</p>
 				</div>
 				<div className='banner-call__button flex items-center justify-center p-4'>
-					<Button text={'Solícita un Demo'} type={'primary'} action={() => { }} />
+					<Button text={'Solícita un Demo'} type={'third'} action={'contacto'} />
 				</div>
 			</div>
 		</div>

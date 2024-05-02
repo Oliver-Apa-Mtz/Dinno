@@ -1,0 +1,13 @@
+.Questions{
+	width: 100%;
+	max-width: 800px;
+	margin: 0px auto;
+	padding: 40px 0;
+}
+.Questions__item{
+	background-color: white;
+	transition: all .3s;
+}
+.Questions__item--active, .Questions__item:hover {
+	background-color: rgb(243, 247, 251);
+}

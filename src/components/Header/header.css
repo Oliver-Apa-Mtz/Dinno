@@ -1,18 +1,26 @@
 .header{
 	width: 100%;
-	min-height: 80px;
+	min-height: 70px;
 	backdrop-filter: blur(12px);
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 	z-index: 99;
 	position: fixed;
 	left: 0;
 	top: 0;
+	transition: all .3s;
+}
+.header:hover{
+	background-color: white;
+}
+.header:hover .header__nav__item{
+	color: #02015A;
 }
 .header__content{
 	width: 100%;
+	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
-	padding: 20px 60px;
+	padding: 0 20px;
 	display: flex;
 	justify-content: space-between
 }
@@ -35,4 +43,17 @@
 	width: 33%;
 	display: flex;
 	justify-content: flex-end;
+}
+.fixed{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.fixed:hover {
+	backdrop-filter: blur(12px);
+	background-color: rgba(255, 255, 255, 0.5)
+}
+.fixed .header__nav__item {
+	color: #02015A;
+}
+.header__nav__item:hover {
+	color: #573CFF !important;
 }

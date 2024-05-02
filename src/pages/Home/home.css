@@ -163,6 +163,15 @@
 	margin-top: 100px;
 	background: linear-gradient(180deg, #ecf1f7 0%, rgba(243, 247, 251, 0) 100%);
 }
+.container-prices{
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
 
 @media only screen and (max-width: 640px) {
 	.banner-principal{

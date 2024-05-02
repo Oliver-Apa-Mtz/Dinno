@@ -7,3 +7,6 @@
 .packageWeb > div{
 	width: 50%;
 }
+.packageWeb__image {
+	width: 90%;
+}

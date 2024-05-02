@@ -1,0 +1,11 @@
+.price{
+	width: 100%;
+	max-width: 370px;
+	padding: 40px;
+	border-radius: 16px;
+	margin-top: 50px;
+	height: 100%;
+}
+.price__items{
+	min-height: 280px;
+}

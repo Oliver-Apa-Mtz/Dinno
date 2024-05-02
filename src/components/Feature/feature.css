@@ -11,3 +11,6 @@
 .FeatureItem h5{
 	min-height: 60px;
 }
+.FeatureItem__circle img{
+	width: 30px;
+}
