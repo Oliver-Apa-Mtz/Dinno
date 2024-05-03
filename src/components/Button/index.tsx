@@ -6,15 +6,18 @@ interface IProps {
 	type: string;
 	action: string;
 	position?: string;
+	large?: boolean;
 }
-const Button = ({ text, type, action, position = 'center' }: IProps) => {
+const Button = ({ text, type, action, large, position = 'center' }: IProps) => {
 	return (
 		<div className={`flex items-center ${position === 'center' ? 'justify-center' : position === 'right' ? 'justify-end' : 'justify-start'}`}>
-			<div className={`button button--${type}`}>
-				<div>
-					<Link to={'/' + action}>{text}</Link>
+			<Link to={'/' + action}>
+				<div className={`button button--${type} ${large ? 'button--large' : ''}`}>
+					<div>
+						{text}
+					</div>
 				</div>
-			</div>
+			</Link>
 		</div>
 	)
 }

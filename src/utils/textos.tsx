@@ -41,6 +41,10 @@ export const TextServices = {
 		title: 'Tu visión, nuestra creación',
 		text: 'Transforma tu visión en realidad con nuestro Paquete Personalizado. Trabajamos contigo para crear una solución web adaptada a tu marca y audiencia. Características avanzadas y diseño a medida para una presencia en línea inolvidable.'
 	},
+	contact: {
+		title: '¿Listo para Empezar tu Viaje Digital?',
+		text: 'Nuestro equipo está listo para escuchar tus ideas y convertirlas en una experiencia digital impresionante. ¡Déjanos saber cómo podemos ayudarte y comencemos a construir algo increíble!'
+	}
 }
 
 export const TextFeature = [
