@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import { useSpring, animated } from '@react-spring/web';
 
 import '../Home/home.css';
 import Layout from '../../components/Layout';
@@ -12,6 +14,22 @@ import { Textos, DataQuestions, DataTestimonial, DataPrices } from '../../utils/
 
 
 const Prices = () => {
+	const [isVisible, setIsVisible] = useState(false);
+	const [isVisibleBanner2, setIsVisibleBanner2] = useState(false);
+	const isMobile = window.innerWidth <= 1023;
+
+	const animationPropsBanner1 = useSpring({
+		opacity: isVisible ? 1 : 0,
+	});
+	const animationPropsBanner2 = useSpring({
+		opacity: isVisibleBanner2 ? 1 : 0,
+		transform: isVisibleBanner2 ? 'translateY(0)' : 'translateY(50px)',
+	});
+
+	useEffect(() => {
+		setIsVisible(true);
+		setIsVisibleBanner2(true);
+	}, []);
 
 	return (
 		<Layout>
@@ -26,16 +44,21 @@ const Prices = () => {
 							<div className='efect__two--1'></div>
 							<div className='efect__two--2'></div>
 						</div>
-						<BannerText
-							title={Textos.prices.title}
-							text={Textos.prices.text}
-							buttonsDemo={false}
-						/>
-						<div className='container-prices'>
-							{DataPrices.map((price: any) => (
-								<Price type={price.type} paquete={price.package} price={price.price} features={price.items} />
-							))}
-						</div>
+						<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">
+							<BannerText
+								title={Textos.prices.title}
+								text={Textos.prices.text}
+								buttonsDemo={false}
+							/>
+						</animated.div>
+
+						<animated.div style={!isMobile ? animationPropsBanner2 : {}} className="animated-element">
+							<div className='container-prices'>
+								{DataPrices.map((price: any, index: number) => (
+									<Price type={price.type} paquete={price.package} price={price.price} features={price.items} key={'price' + index} />
+								))}
+							</div>
+						</animated.div>
 					</div>
 
 					<div>

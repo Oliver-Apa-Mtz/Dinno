@@ -2,6 +2,7 @@
 	width: 100%;
 	margin: 80px auto;
 	position: relative;
+	height: 500px;
 }
 
 .sliderTestimonial__container {
@@ -21,4 +22,31 @@
 }
 .sliderTestimonial__item__circle img{
 	max-width: 60%;
+}
+.slick-dots{
+	bottom: 200px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+	.sliderTestimonial{
+		height: 400px;
+	}
+	.sliderTestimonial__item {
+		width: 500px;
+		height: 300px;
+		padding: 20px;
+	}
+	.sliderTestimonial__item > p{
+		font-size: 2rem;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.sliderTestimonial {
+		height: 400px;
+	}
+
+	.sliderTestimonial__item {
+		width: 400px;
+		height: 300px;
+	}
 }

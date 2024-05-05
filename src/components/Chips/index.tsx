@@ -7,8 +7,8 @@ interface IProps {
 }
 const Chip = ({ title, direction, light }: IProps) => {
 	return (
-		<div className={`flex items-center ${direction === 'center' ? 'justify-center' : direction === 'right' ? 'justify-end' : 'justify-start'}`}>
-			<div className={`w-max chip rounded-full bg-gray px-9 py-2 ${light ? 'bg-gray' : 'bg-white'}`}>
+		<div className={`chip__container flex items-center ${direction === 'center' ? 'justify-center' : direction === 'right' ? 'lg:justify-end justify-center' : 'lg:justify-start justify-center'}`}>
+			<div className={`w-max chip rounded-full bg-gray px-10 py-2 ${light ? 'bg-gray' : 'bg-white'}`}>
 				<p data-text-fill="true" className='be-vietnam-bold'>{title}</p>
 			</div>
 		</div>

@@ -15,7 +15,7 @@ const Testimonial = ({ text, image, name, color }: IProps) => {
 				<div className='sliderTestimonial__item__circle flex-none mr-5 flex items-center justify-center'>
 					<img src={image} alt="" />
 				</div>
-				<p className='banner-principal__text--primary poppins-medium text-principal text-[16px] w-auto text-principal'>{name}</p>
+				<p className='banner-principal__text--primary poppins-medium text-principal text-[14px] lg:text-[16px] w-auto text-principal'>{name}</p>
 			</div>
 		</div>
 	)

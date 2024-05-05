@@ -7,8 +7,8 @@ const Metrics = () => {
 				<h5 className='banner-principal__text--primary poppins-medium text-principal text-[30px]'>Resultados que hablan por sí mismos</h5>
 				<div className='flex items-center justify-center mt-20'>
 					<div className='metrics__item'>
-						<h6 className='poppins-medium text-principal title__one text-secundario'>95%</h6>
-						<p className='be-vietnam-light text text-text'>Porcentaje de Retención </p>
+						<h6 className='poppins-medium text-principal title__one text-secundario'>100%</h6>
+						<p className='be-vietnam-light text text-text'>Comprometidos contigo</p>
 					</div>
 					<div className='metrics__item border-x border-[#b9bed1]'>
 						<h6 className='poppins-medium text-principal title__one text-secundario'>10+</h6>

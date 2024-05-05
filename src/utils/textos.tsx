@@ -8,27 +8,27 @@ import User from '../assets/img/user.png';
 
 export const Textos = {
 	main: {
-		title: 'Sé visible, crece online con DINNO.',
+		title: 'Sé visible, crece online con Dinno.',
 		subtitle: 'Transformamos tu presencia digital en una poderosa herramienta de crecimiento',
-		text: 'Bienvenido a DINNO, donde convertimos tus sueños en realidad digital. Nos especializamos en el diseño y desarrollo de páginas web que no solo impresionan, sino que también impulsan tu negocio hacia el éxito. ¿Listo para dar el siguiente paso ? '
+		text: 'Bienvenido a Dinno, donde convertimos tus sueños en realidad digital. Nos especializamos en el diseño y desarrollo de páginas web que no solo impresionan, sino que también impulsan tu negocio hacia el éxito. ¿Listo para dar el siguiente paso ? '
 	},
 	about: {
 		title: 'Servicios de desarrollo web',
-		text: 'Nuestros servicios de desarrollo web están diseñados para adaptarse a tus necesidades únicas. Desde el diseño de sitios web atractivos hasta la optimización para SEO, en DINNO tenemos lo que necesitas para triunfar en línea.'
+		text: 'Nuestros servicios de desarrollo web están diseñados para adaptarse a tus necesidades únicas. Desde el diseño de sitios web atractivos hasta la optimización para SEO, en Dinno tenemos lo que necesitas para triunfar en línea.'
 	},
 	feature: {
-		title: 'Maximiza tu presencia online con DINNO',
-		text: 'Descubre los beneficios de trabajar con DINNO. Aumenta tu visibilidad, mejora la experiencia del usuario y protege tus datos. Con nosotros, convierte visitantes en clientes satisfechos y asegura un crecimiento continuo para tu negocio en línea.'
+		title: 'Maximiza tu presencia online con Dinno',
+		text: 'Descubre los beneficios de trabajar con Dinno. Aumenta tu visibilidad, mejora la experiencia del usuario y protege tus datos. Con nosotros, convierte visitantes en clientes satisfechos y asegura un crecimiento continuo para tu negocio en línea.'
 	},
 	prices: {
 		title: '¡Impulsa tu presencia en línea con nuestros precios irresistibles!',
-		text: 'Descubre nuestros paquetes de precios y lleva tu negocio al siguiente nivel. ¡Calidad, eficiencia y resultados garantizados a precios que te sorprenderán! ¡Elige DINNO y destaca en el mundo digital hoy mismo!'
+		text: 'Descubre nuestros paquetes de precios y lleva tu negocio al siguiente nivel. ¡Calidad, eficiencia y resultados garantizados a precios que te sorprenderán! ¡Elige Dinno y destaca en el mundo digital hoy mismo!'
 	}
 }
 
 export const TextServices = {
 	title: 'Servicios de desarrollo web para impulsar tu marca online',
-	text: 'Nuestros servicios de desarrollo web están diseñados para adaptarse a tus necesidades únicas. Desde el diseño de sitios web atractivos hasta la optimización para SEO, en DINNO tenemos lo que necesitas para triunfar en línea.',
+	text: 'Nuestros servicios de desarrollo web están diseñados para adaptarse a tus necesidades únicas. Desde el diseño de sitios web atractivos hasta la optimización para SEO, en Dinno tenemos lo que necesitas para triunfar en línea.',
 	basic: {
 		title: 'Presencia web inicial',
 		text: 'Tu primer paso hacia el éxito online. Obtén una presencia sólida y profesional en la web para conectar con tu audiencia y expandir tu alcance. Perfecto para quienes dan sus primeros pasos en el mundo digital.'
@@ -79,21 +79,21 @@ export const DataTestimonial = [
 	{
 		id: 1,
 		name: 'María Fernández, Propietaria de una Tienda Online',
-		text: '¡Increíble trabajo! DINNO transformó por completo nuestra presencia en línea. ¡Altamente recomendado!',
+		text: '¡Increíble trabajo! Dinno transformó por completo nuestra presencia en línea. ¡Altamente recomendado!',
 		image: User,
 		color: '#ECE5FF',
 	},
 	{
 		id: 2,
 		name: 'Carlos González, Director de Marketing',
-		text: '¡Equipo excepcional! Gracias a DINNO, nuestra web ahora genera más leads que nunca. ¡Bravo!',
+		text: '¡Equipo excepcional! Gracias a Dinno, nuestra web ahora genera más leads que nunca. ¡Bravo!',
 		image: User,
 		color: '#FBF7B8',
 	},
 	{
 		id: 3,
 		name: 'Laura Martínez, Fundadora de una Startup Tecnológica',
-		text: 'DINNO es simplemente asombroso. Su enfoque centrado en el cliente y su creatividad nos dejaron boquiabiertos. ¡Gracias por todo!',
+		text: 'Dinno es simplemente asombroso. Su enfoque centrado en el cliente y su creatividad nos dejaron boquiabiertos. ¡Gracias por todo!',
 		image: User,
 		color: '#D9FFD8',
 	}

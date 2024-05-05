@@ -14,3 +14,21 @@
 .footer__company{
 	width: 20%;
 }
+
+@media only screen and (max-width: 1024px) {
+	.footer{
+		padding: 40px 20px;
+	}
+	.footer__logo, .footer__nav, .footer__company {
+		width: 300px;
+		margin: 50px auto;
+		text-align: center;
+	}
+	.footer__logo {
+		margin-bottom: 40px;
+		margin-top: 0px;
+	}
+	.footer__social{
+		justify-content: center;
+	}
+}
