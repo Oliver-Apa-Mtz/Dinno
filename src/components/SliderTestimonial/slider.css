@@ -19,9 +19,7 @@
 	height: 64px;
 	border-radius: 50%;
 	background: white;
-}
-.sliderTestimonial__item__circle img{
-	max-width: 60%;
+	overflow: hidden;
 }
 .slick-dots{
 	bottom: 200px !important;

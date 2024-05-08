@@ -31,7 +31,7 @@ const SliderMarcas = ({ title, data }: Props) => {
 				<Slider {...settings}>
 					{data.map((item) => (
 						<div key={item.id} className="slider-item">
-							<img className="slider-image" src={item.image} width={100} loading="lazy" alt="" />
+							<img className="slider-image" src={item.image} width={100} loading="lazy" alt={title} />
 						</div>
 					))}
 				</Slider>

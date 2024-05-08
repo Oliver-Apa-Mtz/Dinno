@@ -9,7 +9,7 @@ const FeatureItem = ({ title, description, image }: IProps) => {
 	return (
 		<div className='FeatureItem px-4'>
 			<div className='FeatureItem__circle rounded-full flex items-center justify-center'>
-				<img src={image} className='invert' />
+				<img src={image} className='invert' alt={title} />
 			</div>
 			<div>
 				<h5 className='banner-principal__text--primary poppins-medium text-principal text-[20px]'>{title}</h5>

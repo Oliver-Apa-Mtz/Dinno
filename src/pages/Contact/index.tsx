@@ -68,7 +68,7 @@ const Contact = () => {
 
 					<div>
 						<div>
-							<BannerCall />
+							<BannerCall secondary={true} />
 						</div>
 					</div>
 				</div>

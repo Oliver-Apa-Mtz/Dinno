@@ -9,9 +9,9 @@ import PackageWeb from '../../components/PackageWeb';
 import FeatureItem from '../../components/Feature';
 import BannerCall from '../../components/BannerCall';
 
-import Product1 from '../../assets/img/sitio-1.png';
-import Product2 from '../../assets/img/sitio-2.png';
-import Product3 from '../../assets/img/sitio-3.png';
+import Product1 from '../../assets/img/sitio-1.webp';
+import Product2 from '../../assets/img/sitio-2.webp';
+import Product3 from '../../assets/img/sitio-3.webp';
 
 import { Textos, TextServices, TextFeature } from '../../utils/textos';
 
@@ -120,6 +120,12 @@ const Features = () => {
 						</animated.div>
 					</div>
 
+					<div>
+						<div>
+							<BannerCall />
+						</div>
+					</div>
+
 					<div className='banner-principal'>
 						<div>
 							<Chip title={'Beneficios'} light={true} direction={'center'} />
@@ -148,7 +154,7 @@ const Features = () => {
 
 					<div>
 						<div>
-							<BannerCall />
+							<BannerCall secondary={true} />
 						</div>
 					</div>
 				</div>

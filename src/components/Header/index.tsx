@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 import Button from '../Button';
-import Logo from '../../assets/img/logo.png';
+import Logo from '../../assets/img/logo.webp';
 import { RiMenu4Fill } from "react-icons/ri";
 
 const Header = () => {
@@ -45,7 +45,7 @@ const Header = () => {
 				<div className="header__content">
 					<div className='header__logo'>
 						<Link to="/">
-							<img className='h-[80px]' src={Logo} alt="" />
+							<img className='h-[80px]' src={Logo} alt="Dinno | Agencia de Desarrollo de Páginas Web y Posicionamiento SEO" />
 						</Link>
 					</div>
 					<div className='header__nav'>

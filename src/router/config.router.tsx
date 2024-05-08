@@ -7,6 +7,7 @@ import Prices from '../pages/Prices';
 import Contact from '../pages/Contact';
 import Blog from '../pages/Blog';
 import ThankYou from '../pages/Thanks';
+import Privacy from '../pages/Privacy';
 
 import { Analytics } from "@vercel/analytics/react"
 //import Building from "../pages/Building";
@@ -26,6 +27,7 @@ export const Router = () => {
 				<Route path="/blog" element={<Blog />} />
 				<Route path="/nosotros" element={<Blog />} />
 				<Route path="/gracias-por-contactarnos" element={<ThankYou />} />
+				<Route path="/aviso-de-privacidad" element={<Privacy />} />
 				{/*<Route path="/" element={<Building />} />*/}
 			</Routes>
 		</>

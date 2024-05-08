@@ -28,6 +28,10 @@
 		max-width: 400px;
 		margin: 0 auto;
 	}
+	.packageWeb .price--oferta{
+		left: calc(50% - 20px) !important;
+		top: -50px !important;
+	}
 }
 @media only screen and (max-width: 640px) {
 	.packageWeb__image img {

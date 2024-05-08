@@ -6,8 +6,9 @@ interface IProps {
 	text?: string;
 	buttonsDemo: boolean;
 	size?: string;
+	contactButton?: boolean;
 }
-const BannerText = ({ title, subtitle, text, buttonsDemo, size }: IProps) => {
+const BannerText = ({ title, subtitle, text, buttonsDemo, size, contactButton }: IProps) => {
 	return (
 		<div>
 			<div className='banner-principal__text'>
@@ -29,6 +30,11 @@ const BannerText = ({ title, subtitle, text, buttonsDemo, size }: IProps) => {
 				{buttonsDemo && (
 					<div className='banner-principal__buttons'>
 						<Button text={'Conócenos'} type={'primary'} action={'caracteristicas'} />
+						<Button text={'Solícita un Demo'} type={'secondary'} action={'contacto'} />
+					</div>
+				)}
+				{contactButton && (
+					<div className='banner-principal__buttons'>
 						<Button text={'Solícita un Demo'} type={'secondary'} action={'contacto'} />
 					</div>
 				)}

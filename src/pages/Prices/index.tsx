@@ -10,7 +10,7 @@ import SliderTestimonial from '../../components/SliderTestimonial';
 import Questions from '../../components/Questions';
 import Price from '../../components/Price';
 
-import { Textos, DataQuestions, DataTestimonial, DataPrices } from '../../utils/textos';
+import { Textos, DataQuestions, DataTestimonial, DataPrices, PriceHelp } from '../../utils/textos';
 
 
 const Prices = () => {
@@ -55,10 +55,20 @@ const Prices = () => {
 						<animated.div style={!isMobile ? animationPropsBanner2 : {}} className="animated-element">
 							<div className='container-prices'>
 								{DataPrices.map((price: any, index: number) => (
-									<Price type={price.type} paquete={price.package} price={price.price} features={price.items} key={'price' + index} />
+									<Price type={price.type} paquete={price.package} price={price.price} features={price.items} limit={price.limit} key={'price' + index} />
 								))}
 							</div>
 						</animated.div>
+					</div>
+
+					<div className='banner-principal mb-20'>
+						<BannerText
+							title={PriceHelp.title}
+							text={PriceHelp.text}
+							buttonsDemo={false}
+							size={'large'}
+							contactButton={true}
+						/>
 					</div>
 
 					<div>
@@ -83,7 +93,7 @@ const Prices = () => {
 
 					<div>
 						<div>
-							<BannerCall />
+							<BannerCall secondary={true} />
 						</div>
 					</div>
 				</div>

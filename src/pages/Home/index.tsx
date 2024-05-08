@@ -12,9 +12,9 @@ import Metrics from '../../components/Metrics';
 import SliderTestimonial from '../../components/SliderTestimonial';
 import Questions from '../../components/Questions';
 
-import Product1 from '../../assets/img/sitio-1.png';
-import Product2 from '../../assets/img/sitio-2.png';
-import Product3 from '../../assets/img/sitio-3.png';
+import Product1 from '../../assets/img/sitio-1.webp';
+import Product2 from '../../assets/img/sitio-2.webp';
+import Product3 from '../../assets/img/sitio-3.webp';
 
 import { Textos, TextServices, TextFeature, DataTestimonial, DataQuestions } from '../../utils/textos';
 
@@ -188,7 +188,7 @@ const Home = () => {
 							<Questions data={DataQuestions} />
 						</div>
 						<div>
-							<BannerCall />
+							<BannerCall secondary={true} />
 						</div>
 					</div>
 				</div>
