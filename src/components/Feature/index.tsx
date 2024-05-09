@@ -12,7 +12,7 @@ const FeatureItem = ({ title, description, image }: IProps) => {
 				<img src={image} className='invert' alt={title} />
 			</div>
 			<div>
-				<h5 className='banner-principal__text--primary poppins-medium text-principal text-[20px]'>{title}</h5>
+				<p className='h5 banner-principal__text--primary poppins-medium text-principal text-[20px]'>{title}</p>
 				<p className='banner-principal__text--secondary be-vietnam-light text text-text'>{description}</p>
 			</div>
 		</div>

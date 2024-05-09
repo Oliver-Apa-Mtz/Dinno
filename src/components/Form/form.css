@@ -5,6 +5,7 @@
 	padding: 0 20px;
 }
 .form__item{
+	min-height: 56px;
 	padding: 16px;
 	border-radius: 8px;
 	display: block;

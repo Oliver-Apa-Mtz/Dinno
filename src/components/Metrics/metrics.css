@@ -13,7 +13,7 @@
 }
 
 @media only screen and (max-width: 640px) {
-	.metrics__item p {
+	.metrics__item .p {
 		font-size: 1.2rem !important;
 		margin-top: 10px;
 	}

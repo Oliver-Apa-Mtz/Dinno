@@ -76,10 +76,10 @@ const Form = ({ paquete }: IProps) => {
 				return;
 			}
 			emailjs.sendForm(
-				process.env.VITE_VERCEL_ENV_EMAILJS_SERVICE_ID || '',
-				process.env.VITE_VERCEL_ENV_EMAILJS_TEMPLATE_ID || '',
+				import.meta.env.VITE_VERCEL_ENV_EMAILJS_SERVICE_ID || '',
+				import.meta.env.VITE_VERCEL_ENV_EMAILJS_TEMPLATE_ID || '',
 				e.target,
-				process.env.VITE_VERCEL_ENV_EMAILJS_USER_ID
+				import.meta.env.VITE_VERCEL_ENV_EMAILJS_USER_ID
 			).then(() => {
 				navigate('/gracias-por-contactarnos')
 			}, () => {

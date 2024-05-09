@@ -1,10 +1,10 @@
 .banner-principal{
 	position: relative;
 	padding: 80px 0 0px;
+	overflow: hidden;
 }
 .banner-principal--custom{
-	padding: 180px 0 80px;
-	margin-top: 50px;
+	padding: 230px 0 80px;
 }
 .banner-principal__text {
 	position: relative;
@@ -53,7 +53,7 @@
 	overflow: visible;
 	padding: 0;
 	position: absolute;
-	top: -400px;
+	top: -350px;
 	transform: perspective(1200px);
 	width: 772px;
 	z-index: 0;
@@ -100,7 +100,7 @@
 	overflow: visible;
 	padding: 0;
 	position: absolute;
-	top: -400px;
+	top: -350px;
 	transform: perspective(1200px);
 	width: 772px;
 	z-index: 0;
@@ -196,7 +196,7 @@
 		height: auto;
 	}
 	.banner-principal--custom {
-		padding: 100px 0 80px;
+		padding: 150px 0 80px;
 	}
 	.title__one {
 		font-size: 3rem;
@@ -219,5 +219,8 @@
 	}
 	.banner-principal__buttons > div{
 		margin-bottom: 20px;
+	}
+	.efect__one, .efect__two{
+		display: none;
 	}
 }
