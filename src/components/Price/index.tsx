@@ -26,7 +26,7 @@ const Price = ({ type, paquete, price, features, limit }: IProps) => {
 				))}
 			</div>
 			<Button text={'Solícita un Demo'} type={type === 'main' ? 'secondary' : 'third'} action={'contacto'} />
-			<div className={`price--oferta text-center flex flex-wrap justify-end w-[40px] top-5 right-5 ${type === 'main' ? 'text-[#FF204E]' : 'text-white'}`}>
+			<div className={`price--oferta text-center flex flex-wrap justify-end w-[40px] top-5 right-5 ${type === 'main' ? 'text-[#371ae7]' : 'text-white'}`}>
 				<div className='w-full flex justify-center'>
 					<FaFireFlameCurved className='text-[2.5rem]' />
 				</div>

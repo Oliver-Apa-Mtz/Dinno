@@ -21,7 +21,7 @@ const PackageWeb = ({ order, chipText, title, description, action, nameAction, i
 				<h4 className={`poppins-medium text-principal my-10 text-7xl leading-tight ${order === 1 ? 'lg:pr-5' : 'lg:pl-5'}`}>{title}</h4>
 				<p className='be-vietnam-light text text-text mb-10'>{description}</p>
 				<Button text={nameAction} type={'primary'} action={action} position={order === 2 ? 'right' : ''} />
-				<div className={`price--oferta text-center flex flex-wrap justify-end w-[40px] text-[#FF204E] -top-3 ${order === 1 ? 'left-[200px]' : 'right-[200px]'}`}>
+				<div className={`price--oferta text-center flex flex-wrap justify-end w-[40px] text-[#371ae7] -top-3 ${order === 1 ? 'left-[200px]' : 'right-[200px]'}`}>
 					<div className='w-full flex justify-center'>
 						<FaFireFlameCurved className='text-[2.5rem]' />
 					</div>
