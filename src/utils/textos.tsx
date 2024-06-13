@@ -8,6 +8,11 @@ import User1 from '../assets/img/user-1.webp';
 import User2 from '../assets/img/user-2.webp';
 import User3 from '../assets/img/user-3.webp';
 
+import People1 from '../assets/img/people-1.webp';
+import People2 from '../assets/img/people-2.webp';
+import People3 from '../assets/img/people-3.webp';
+import People4 from '../assets/img/people-4.webp';
+
 export const Textos = {
 	main: {
 		title: 'Sé visible, crece online con Dinno.',
@@ -25,6 +30,11 @@ export const Textos = {
 	prices: {
 		title: 'Precios adaptados a tus necesidades',
 		text: 'Descubre nuestros paquetes de precios y lleva tu negocio al siguiente nivel. ¡Calidad, eficiencia y resultados garantizados a precios que te sorprenderán! ¡Elige Dinno y destaca en el mundo digital hoy mismo!'
+	},
+	conocenos: {
+		title: '¿Quienes somos?',
+		subtitle: 'Conócenos',
+		text: 'En Dinno, somos un equipo apasionado por el diseño y desarrollo de páginas web modernas y accesibles. Nos encanta convertir tus ideas en sitios web increíbles y funcionales.'
 	}
 }
 
@@ -128,7 +138,7 @@ export const DataPrices = [
 	{
 		type: 'main',
 		package: 'Básico',
-		price: '10,000',
+		price: '5,000',
 		items: [
 			'Web profesional y responsive',
 			'Hasta 3 páginas',
@@ -137,12 +147,12 @@ export const DataPrices = [
 			'Integración de redes sociales',
 			'Soporte técnico básico'
 		],
-		limit: true
+		limit: false
 	},
 	{
 		type: 'secondary',
 		package: 'Empresarial',
-		price: '20,000',
+		price: '10,000',
 		items: [
 			'Web profesional y responsive',
 			'Hasta 8 páginas',
@@ -152,7 +162,7 @@ export const DataPrices = [
 			'Integración de redes sociales',
 			'Soporte técnico prioritario'
 		],
-		limit: true
+		limit: false
 	},
 	{
 		type: 'main',
@@ -176,3 +186,40 @@ export const PriceHelp = {
 	title: '¿Preocupado por el presupuesto?',
 	text: 'En Dinno, estamos comprometidos a ofrecerte soluciones de desarrollo web que se ajusten a tus necesidades financieras. Ya sea que estés buscando un sitio web básico, empresarial o personalizado, estamos aquí para adaptarnos a tus requisitos específicos y encontrar la mejor opción para ti. ¡Hablemos y descubre cómo podemos hacer que tu proyecto despegue sin gastar una fortuna!'
 }
+
+export const TextAbout = {
+	title: '¡Hola amigos!',
+	sub: 'Dinno nace de la idea de jóvenes emprendedores que comparten una gran pasión por el desarrollo de páginas web. Desde el principio, nuestra misión ha sido ayudar a las pequeñas empresas a tener una presencia en línea fuerte y efectiva.',
+	sub2: 'Nos dimos cuenta de que muchas pequeñas empresas necesitan una página web, pero los altos costos y la complejidad del desarrollo web pueden ser desalentadores. Así que decidimos hacer algo al respecto. En Dinno, creemos que todos deberían tener acceso a un sitio web de calidad, sin importar el tamaño de su presupuesto.',
+	sub3: 'Nos encanta trabajar de cerca con nuestros clientes, entendiendo sus necesidades y ofreciendo soluciones personalizadas que no solo son efectivas, sino también asequibles. Queremos ver a las pequeñas empresas crecer y prosperar en el mundo digital, y estamos aquí para hacer que eso suceda.',
+	sub4: 'Así que, si estás buscando una manera de llevar tu negocio al siguiente nivel en línea, ¡estamos aquí para ayudarte!',
+	sub5: '¡Gracias por confiar en nosotros y permitirnos ser parte de tu viaje digital!',
+	peopleTitle: 'Más que un equipo una familia.'
+}
+
+export const DataPeople = [
+	{
+		title: 'Aldo',
+		position: 'Finanzas',
+		image: People1,
+		color: ''
+	},
+	{
+		title: 'Itzel',
+		position: 'COO - Operaciones',
+		image: People3,
+		color: ''
+	},
+	{
+		title: 'Oliver',
+		position: 'CEO - Dirección',
+		image: People2,
+		color: ''
+	},
+	{
+		title: 'Elizabeth',
+		position: 'Desarrollador Web',
+		image: People4,
+		color: ''
+	},
+]

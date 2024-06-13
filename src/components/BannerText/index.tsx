@@ -29,13 +29,13 @@ const BannerText = ({ title, subtitle, text, buttonsDemo, size, contactButton }:
 				)}
 				{buttonsDemo && (
 					<div className='banner-principal__buttons'>
-						<Button text={'Conócenos'} type={'primary'} action={'caracteristicas'} />
-						<Button text={'Solícita un Demo'} type={'secondary'} action={'contacto'} />
+						<Button text={'Conócenos'} type={'primary'} action={'nosotros'} />
+						<Button text={'Servicios Web'} type={'secondary'} action={'servicios'} />
 					</div>
 				)}
 				{contactButton && (
 					<div className='banner-principal__buttons'>
-						<Button text={'Solícita un Demo'} type={'secondary'} action={'contacto'} />
+						<Button text={'Contáctanos'} type={'secondary'} action={'contacto'} />
 					</div>
 				)}
 			</div>

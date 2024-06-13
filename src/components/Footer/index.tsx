@@ -12,15 +12,14 @@ const Footer = () => {
 					</Link>
 				</div>
 				<div className='footer__nav'>
-					<Link to="/caracteristicas" className="block poppins-medium text-principal text-6xl mb-6 cursor-pointer hover:text-secundario">Características</Link>
+					<Link to="/servicios" className="block poppins-medium text-principal text-6xl mb-6 cursor-pointer hover:text-secundario">Servicios</Link>
 					<Link to="/precios" className="block poppins-medium text-principal text-6xl mb-6 cursor-pointer hover:text-secundario">Precios</Link>
 					<Link to="/contacto" className="block poppins-medium text-principal text-6xl mb-6 cursor-pointer hover:text-secundario">Contacto</Link>
 					<Link to="/blog" className="block poppins-medium text-principal text-6xl mb-6 cursor-pointer hover:text-secundario">Blog</Link>
 				</div>
 				<div className='footer__company'>
-					<div className="be-vietnam-semibold text-3xl mb-4 text-principal cursor-pointer hover:text-secundario">Cultura</div>
-					<div className="be-vietnam-semibold text-text text-3xl mb-4 cursor-pointer hover:text-secundario">Historia</div>
-					<div className="be-vietnam-semibold text-text text-3xl mb-4 cursor-pointer hover:text-secundario">Equipo</div>
+					<Link to="/nosotros" className="block be-vietnam-semibold text-3xl mb-4 text-principal cursor-pointer hover:text-secundario">Nosotros</Link>
+					<Link to="/nosotros" className="block be-vietnam-semibold text-text text-3xl mb-4 cursor-pointer hover:text-secundario">Historia</Link>
 					<div className='footer__social flex gap-4 mt-10'>
 						<a className='text-principal hover:text-secundario text-6xl' href="https://www.facebook.com/AgenciaDinno" target='blank'>
 							<FaSquareFacebook />

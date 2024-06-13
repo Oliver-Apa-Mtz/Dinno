@@ -14,7 +14,7 @@
 	padding: 14px 100px;
 }
 .button:hover{
-	box-shadow: 0px 3px 8px rgba(87,60,255,.3);
+	animation: shadow-pulse 1s !important;
 }
 .button--primary{
 	background-color: white;
@@ -43,4 +43,13 @@
 	background-color: #F3F7FB;
 	color: #573CFF;
 	padding: 14px 30px;
+}
+
+@keyframes shadow-pulse {
+	0% {
+		box-shadow: 0 0 0 0px #bab2ee;
+	}
+	100% {
+		box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+	}
 }

@@ -5,7 +5,7 @@ const sitemap = new SitemapStream({
 });
 sitemap.write({ url: "/", changefreq: "daily", priority: 1 });
 sitemap.write({ url: "/inicio", changefreq: "daily", priority: 1 });
-sitemap.write({ url: "/caracteristicas", changefreq: "daily", priority: 0.9 });
+sitemap.write({ url: "/servicios", changefreq: "daily", priority: 0.9 });
 sitemap.write({ url: "/precios", changefreq: "daily", priority: 0.8 });
 sitemap.write({ url: "/contacto", changefreq: "daily", priority: 0.8 });
 sitemap.write({ url: "/blog", changefreq: "weekly", priority: 0.7 });

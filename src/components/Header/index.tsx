@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './header.css';
 import Button from '../Button';
 import Logo from '../../assets/img/logo.webp';
+import ImgHover from '../../assets/img/eye.png';
 import { RiMenu4Fill } from "react-icons/ri";
 
 const Header = () => {
@@ -49,13 +50,41 @@ const Header = () => {
 						</Link>
 					</div>
 					<div className='header__nav'>
-						<Link to="/caracteristicas" className="header__nav__item text-white">Características</Link>
-						<Link to="/precios" className="header__nav__item text-white">Precios</Link>
-						<Link to="/contacto" className="header__nav__item text-white">Contacto</Link>
-						<Link to="/blog" className="header__nav__item text-white">Blog</Link>
+						<Link to="/servicios" className="header__nav__item text-white min-w-[82px]">Servici
+							<span className='header__nav--hide-hover'>
+								o
+							</span>
+							<span className="header__nav--effect">
+								<img src={ImgHover} alt="" />
+							</span>
+							s</Link>
+						<Link to="/precios" className="header__nav__item text-white min-w-[68px]">Preci
+							<span className='header__nav--hide-hover'>
+								o
+							</span>
+							<span className="header__nav--effect">
+								<img src={ImgHover} alt="" />
+							</span>
+							s</Link>
+						<Link to="/nosotros" className="header__nav__item text-white min-w-[100px]">Conócen
+							<span className='header__nav--hide-hover'>
+								o
+							</span>
+							<span className="header__nav--effect">
+								<img src={ImgHover} alt="" />
+							</span>
+							s</Link>
+						<Link to="/contacto" className="header__nav__item text-white min-w-[85px]">Contact
+							<span className='header__nav--hide-hover'>
+								o
+							</span>
+							<span className="header__nav--effect">
+								<img src={ImgHover} alt="" />
+							</span>
+						</Link>
 					</div>
 					<div className='header__buttons'>
-						<Button text={'Solícita un Demo'} type={'primary'} action={'contacto'} />
+						<Button text={'Solícita un Demo'} type={'third'} action={'contacto'} />
 					</div>
 					<div className='header__menu text-6xl'>
 						<RiMenu4Fill className='cursor-pointer' onClick={() => setMenuMovil(!menuMovil)} />
@@ -63,10 +92,10 @@ const Header = () => {
 				</div>
 				{menuMovil && (
 					<div className='header__nav__movil bg-white' onClick={() => setMenuMovil(false)}>
-						<Link to="/caracteristicas" className="header__nav__item__movil text-secundario text-2xl text-right">Características</Link>
+						<Link to="/servicios" className="header__nav__item__movil text-secundario text-2xl text-right">Servicios</Link>
 						<Link to="/precios" className="header__nav__item__movil text-secundario text-2xl text-right">Precios</Link>
+						<Link to="/nosotros" className="header__nav__item__movil text-secundario text-2xl text-right">Conócenos</Link>
 						<Link to="/contacto" className="header__nav__item__movil text-secundario text-2xl text-right">Contacto</Link>
-						<Link to="/blog" className="header__nav__item__movil text-secundario text-2xl text-right">Blog</Link>
 					</div>
 				)}
 			</div>

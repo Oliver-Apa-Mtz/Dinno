@@ -1,0 +1,10 @@
+.container-images{
+	display: flex;
+}
+.people-circle__item{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid white;
+}

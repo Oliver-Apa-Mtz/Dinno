@@ -101,7 +101,7 @@ const Home = () => {
 								chipText='Básico'
 								title={TextServices.basic.title}
 								description={TextServices.basic.text}
-								nameAction='Solícita un Demo'
+								nameAction='¡Comienza con lo básico!'
 								action={'contacto/basico'}
 								image={Product1}
 							/>
@@ -113,7 +113,7 @@ const Home = () => {
 								chipText='Empresarial'
 								title={TextServices.enterprise.title}
 								description={TextServices.enterprise.text}
-								nameAction='Solícita un Demo'
+								nameAction='¡Impulsa tu negocio!'
 								action={'contacto/empresarial'}
 								image={Product2}
 							/>
@@ -125,7 +125,7 @@ const Home = () => {
 								chipText='Personalizado'
 								title={TextServices.premium.title}
 								description={TextServices.premium.text}
-								nameAction='Solícita un Demo'
+								nameAction='¡Crea tu sitio único!'
 								action={'contacto/personalizado'}
 								image={Product3}
 							/>

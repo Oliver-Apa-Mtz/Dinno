@@ -77,7 +77,8 @@ const Features = () => {
 							<BannerText
 								title={TextServices.title}
 								text={TextServices.text}
-								buttonsDemo={true}
+								buttonsDemo={false}
+								contactButton={true}
 							/>
 						</animated.div>
 					</div>
@@ -89,7 +90,7 @@ const Features = () => {
 								chipText='Básico'
 								title={TextServices.basic.title}
 								description={TextServices.basic.text}
-								nameAction='Solícita un Demo'
+								nameAction='¡Comienza con lo básico!'
 								action={'contacto/basico'}
 								image={Product1}
 							/>
@@ -101,7 +102,7 @@ const Features = () => {
 								chipText='Empresarial'
 								title={TextServices.enterprise.title}
 								description={TextServices.enterprise.text}
-								nameAction='Solícita un Demo'
+								nameAction='¡Impulsa tu negocio!'
 								action={'contacto/empresarial'}
 								image={Product2}
 							/>
@@ -113,17 +114,11 @@ const Features = () => {
 								chipText='Personalizado'
 								title={TextServices.premium.title}
 								description={TextServices.premium.text}
-								nameAction='Solícita un Demo'
+								nameAction='¡Crea tu sitio único!'
 								action={'contacto/personalizado'}
 								image={Product3}
 							/>
 						</animated.div>
-					</div>
-
-					<div>
-						<div>
-							<BannerCall />
-						</div>
 					</div>
 
 					<div className='banner-principal'>

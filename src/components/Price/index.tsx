@@ -16,7 +16,7 @@ const Price = ({ type, paquete, price, features, limit }: IProps) => {
 		<div className={`price ${type === 'main' ? 'bg-white' : 'bg-secundario'}`}>
 			<Chip title={paquete} light={type === 'main' ? true : false} />
 			<div className="flex items-end">
-				{limit && <span className={`text-principal mr-2 text-[14px] pb-8 ${type === 'main' ? 'text-principal' : 'text-white'}`}>Hasta</span>}
+				{limit && <span className={`text-principal mr-2 text-[14px] pb-8 ${type === 'main' ? 'text-principal' : 'text-white'}`}>Desde</span>}
 				<h4 className={`poppins-medium title__one--small mt-8 mb-6 ${type === 'main' ? 'text-principal' : 'text-white'}`}>${price}</h4>
 			</div>
 			<p className={`be-vietnam-light text mb-8 ${type === 'main' ? 'text-text' : 'text-white'}`}>Que incluye:</p>

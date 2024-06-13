@@ -61,7 +61,7 @@ const Prices = () => {
 						</animated.div>
 					</div>
 
-					<div className='banner-principal mb-20'>
+					<div className='banner-principal banner-principal--pb'>
 						<BannerText
 							title={PriceHelp.title}
 							text={PriceHelp.text}
