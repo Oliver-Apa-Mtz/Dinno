@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './footer.css'
-import Logo from '../../assets/img/logo-footer.webp';
+import Logo from '../../assets/img/logo-footer-orgullo.webp';
 import { FaSquareFacebook, FaInstagram } from "react-icons/fa6";
 const Footer = () => {
 	return (
