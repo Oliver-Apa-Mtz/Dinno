@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './header.css';
 import Button from '../Button';
 import Logo from '../../assets/img/logo.webp';
-import ImgHover from '../../assets/img/eye.png';
+import ImgHover from '../../assets/img/eye.webp';
 import { RiMenu4Fill } from "react-icons/ri";
 
 const Header = () => {

@@ -21,7 +21,7 @@ const Questions = ({ data }: IProps) => {
 				<div key={index} className={`Questions__item p-6 cursor-pointer rounded-xl mb-4 ${activeIndex === index ? 'Questions__item--active' : ''}`}>
 					<h2 id={`accordion-heading-${index + 1}`} className="flex items-center justify-between w-full p-5" onClick={() => toggleAccordion(index)}>
 						<span className='poppins-medium text-principal text-principal text-[16px]'>{item.title}</span>
-						<svg data-accordion-icon className={`w-3 h-3 shrink-0 w-[20px] h-auto text-text ${activeIndex === index ? '' : 'rotate-180'}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+						<svg data-accordion-icon className={`w-3 h-3 shrink-0 w-[20px] h-auto text-text ${activeIndex === index ? '' : 'rotate-180'}`} aria-hidden="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 							<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 5 5 1 1 5" />
 						</svg>
 					</h2>
