@@ -13,7 +13,6 @@ import About from '../pages/About';
 import Loading from '../components/Loading';
 
 import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/react"
 //import Building from "../pages/Building";
 
 const MainRouter = () => {
@@ -41,7 +40,6 @@ export const Router = () => {
 		<>
 			<ScrollToTop />
 			<Analytics />
-			<SpeedInsights />
 			<Routes>
 				<Route path="/" element={<MainRouter />}>
 					<Route index element={<Home />} />
