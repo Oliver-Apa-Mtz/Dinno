@@ -30,7 +30,7 @@ const PackageWeb = ({ order, chipText, title, description, action, nameAction, i
 			</div>
 			<div className={`${order === 1 ? 'order-2 lg:pl-10 justify-end' : 'order-1 lg:pr-10'} flex items-center`}>
 				<div className='packageWeb__image'>
-					<img src={image} alt={title} />
+					<img src={image} alt={title} loading="lazy" />
 				</div>
 			</div>
 		</div>

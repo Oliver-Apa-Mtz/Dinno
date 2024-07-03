@@ -15,6 +15,7 @@ import Questions from '../../components/Questions';
 import Product1 from '../../assets/img/sitio-1.webp';
 import Product2 from '../../assets/img/sitio-2.webp';
 import Product3 from '../../assets/img/sitio-3.webp';
+import { HiSparkles, HiCursorArrowRays, HiRocketLaunch, HiMiniHeart } from "react-icons/hi2";
 
 import { Textos, TextServices, TextFeature, DataTestimonial, DataQuestions } from '../../utils/textos';
 
@@ -76,12 +77,49 @@ const Home = () => {
 							<div className='efect__two--1'></div>
 							<div className='efect__two--2'></div>
 						</div>
-						<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">
+						<div className='text-ppal poppins-medium flex items-center justify-center'>
+							Sé visible
+							<div className='text-ppal--efect ml-10'>
+								<div className='text-ppal--efect__inner'>
+									<div className='text-ppal--efect__content'>
+										<span>crece <HiSparkles /> aumenta <HiCursorArrowRays /> mejora <HiRocketLaunch /></span>
+										<span>crece <HiSparkles /> aumenta <HiCursorArrowRays /> mejora <HiRocketLaunch /></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className='text-ppal poppins-medium flex items-center justify-center'>
+							online
+							<div className='text-ppal--info'>
+								Nos especializamos en el diseño y desarrollo de páginas web que no solo impresionan, sino que también impulsan tu negocio hacia el éxito.
+							</div>
+						</div>
+						<div className='text-ppal poppins-medium flex items-center justify-center'>
+							con
+							<div className='text-ppal--efect-two ml-10'>
+								<div className='text-ppal--efect__inner'>
+									<div className='text-ppal--efect__content text-ppal--efect__content--custom'>
+										<span>Dinno <HiMiniHeart /></span>
+										<span>Dinno <HiSparkles /></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element" id="banner-ppal">
 							<BannerText
 								subtitle={Textos.main.subtitle}
 								title={Textos.main.title}
 								text={Textos.main.text}
 								buttonsDemo={true}
+							/>
+						</animated.div>
+					</div>
+
+					<div className='banner-principal' id="banner-secondary">
+						<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">
+							<BannerText
+								subtitle={Textos.main.subtitle}
+								buttonsDemo={false}
 							/>
 						</animated.div>
 					</div>

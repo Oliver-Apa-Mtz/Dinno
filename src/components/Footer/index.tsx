@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './footer.css'
-import Logo from '../../assets/img/logo-footer-orgullo.webp';
+import Logo from '../../assets/img/logo-footer.webp';
 import { FaSquareFacebook, FaInstagram } from "react-icons/fa6";
 const Footer = () => {
 	return (
@@ -8,7 +8,7 @@ const Footer = () => {
 			<div className='lg:flex justify-between'>
 				<div className='footer__logo'>
 					<Link to="/">
-						<img className='w-[300px]' src={Logo} alt="Dinno | Agencia de Desarrollo de Páginas Web y Posicionamiento SEO" />
+						<img className='w-[300px]' src={Logo} alt="Dinno | Agencia de Desarrollo de Páginas Web y Posicionamiento SEO" loading="lazy" />
 					</Link>
 				</div>
 				<div className='footer__nav'>
@@ -21,10 +21,10 @@ const Footer = () => {
 					<Link to="/nosotros" className="block be-vietnam-semibold text-3xl mb-4 text-principal cursor-pointer hover:text-secundario">Nosotros</Link>
 					<Link to="/nosotros" className="block be-vietnam-semibold text-text text-3xl mb-4 cursor-pointer hover:text-secundario">Historia</Link>
 					<div className='footer__social flex gap-4 mt-10'>
-						<a className='text-principal hover:text-secundario text-6xl' href="https://www.facebook.com/AgenciaDinno" target='blank'>
+						<a className='text-principal hover:text-secundario text-6xl' href="https://www.facebook.com/AgenciaDinno" target='blank' aria-label="Facebook de Dinno">
 							<FaSquareFacebook />
 						</a>
-						<a className='text-principal hover:text-secundario text-6xl' href="https://www.instagram.com/agenciadinno/" target='blank'>
+						<a className='text-principal hover:text-secundario text-6xl' href="https://www.instagram.com/agenciadinno/" target='blank' aria-label="Instagram de Dinno">
 							<FaInstagram />
 						</a>
 					</div>

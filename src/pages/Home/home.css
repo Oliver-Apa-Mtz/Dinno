@@ -1,3 +1,65 @@
+#banner-ppal{
+	display: none;
+}
+.text-ppal{
+	position: relative;
+	font-size: 14rem;
+	line-height: 120px;
+	margin-bottom: 20px;
+	color: #1e2025;
+}
+.text-ppal--efect{
+	background: #573CFF;
+	color: white;
+	padding: 20px 50px;
+	border-radius: 80px;
+	max-width: 500px;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	display: flex;
+	white-space: nowrap;
+}
+.text-ppal--efect__content{
+	display: flex;
+	white-space: nowrap;
+	animation: marquee 25s linear infinite;
+}
+.text-ppal--efect__content--custom {
+	animation: marquee 10s linear infinite;
+}
+.text-ppal--efect__inner{
+	display: flex;
+	white-space: nowrap;
+}
+.text-ppal--efect__content span {
+	display: inline-block;
+	padding: 0 20px;
+}
+.text-ppal--efect__content svg {
+	display: inline-block;
+	font-size: 6rem;
+}
+.text-ppal--efect-two {
+	background: #f8ff37;
+	color: #573CFF;
+	padding: 20px 50px;
+	border-radius: 80px;
+	max-width: 500px;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	display: flex;
+	white-space: nowrap;
+}
+.text-ppal--info{
+	width: 50%;
+	max-width: 600px;
+	padding: 0 50px;
+	font-size: 2rem;
+	line-height: 34px;
+	font-weight: 400;
+}
 .banner-principal{
 	position: relative;
 	padding: 80px 0 0px;
@@ -192,8 +254,32 @@
 	stroke-width: 4;
 	fill: #38D430;
 }
+@keyframes marquee {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
 
+	100% {
+		transform: translate3d(-50%, 0, 0);
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.text-ppal {
+		font-size: 10rem;
+		line-height: 100px;
+	}
+	.text-ppal--info {
+		width: 100%;
+	}
+}
 @media only screen and (max-width: 1024px) {
+	#banner-ppal {
+		display: block;
+	}
+	.text-ppal, #banner-secondary {
+		display: none;
+	}
 	.title__one {
 		font-size: 5rem;
 	}

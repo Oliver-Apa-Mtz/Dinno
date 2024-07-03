@@ -15,7 +15,7 @@ const PeopleCircle = ({ title, items }: IProps) => {
 				{items.map((item, i) => {
 					return (
 						<div className='people-circle__item -ml-4' key={'people-circle' + i}>
-							<img src={item.image} alt={item.title} />
+							<img src={item.image} alt={item.title} loading="lazy" />
 						</div>
 					)
 				})}

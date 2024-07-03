@@ -13,7 +13,7 @@ const Testimonial = ({ text, image, name, color }: IProps) => {
 			<p className='banner-principal__text--primary poppins-medium text-principal text-[30px] text-principal'>{text}</p>
 			<div className='flex items-center'>
 				<div className='sliderTestimonial__item__circle flex-none mr-5 flex items-center justify-center'>
-					<img src={image} alt={text} />
+					<img src={image} alt={text} loading="lazy" />
 				</div>
 				<p className='banner-principal__text--primary poppins-medium text-principal text-[14px] lg:text-[16px] w-auto text-principal'>{name}</p>
 			</div>

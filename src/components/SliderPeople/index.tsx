@@ -81,7 +81,7 @@ const SliderPeople = () => {
 							</p>
 							<div className='flex items-center'>
 								<div className='sliderPeople__item__circle flex-none mr-5 flex items-center justify-center'>
-									<img src={DataPeople[1].image} alt={DataPeople[1].title} />
+									<img src={DataPeople[1].image} alt={DataPeople[1].title} loading="lazy" />
 								</div>
 								<p>{DataPeople[1].position}</p>
 							</div>
@@ -123,7 +123,7 @@ const SliderPeople = () => {
 							</p>
 							<div className='flex items-center'>
 								<div className='sliderPeople__item__circle flex-none mr-5 flex items-center justify-center'>
-									<img src={DataPeople[0].image} alt={DataPeople[1].title} />
+									<img src={DataPeople[0].image} alt={DataPeople[1].title} loading="lazy" />
 								</div>
 								<p>{DataPeople[0].position}</p>
 							</div>

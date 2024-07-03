@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 import Button from '../Button';
-import Logo from '../../assets/img/logo-orgullo.webp';
+import Logo from '../../assets/img/logo.webp';
 import ImgHover from '../../assets/img/eye.png';
 import { RiMenu4Fill } from "react-icons/ri";
 
@@ -46,7 +46,7 @@ const Header = () => {
 				<div className="header__content">
 					<div className='header__logo'>
 						<Link to="/">
-							<img className='h-[80px]' src={Logo} alt="Dinno | Agencia de Desarrollo de Páginas Web y Posicionamiento SEO" />
+							<img className='h-[80px]' src={Logo} alt="Dinno | Agencia de Desarrollo de Páginas Web y Posicionamiento SEO" loading="lazy" />
 						</Link>
 					</div>
 					<div className='header__nav'>
@@ -55,7 +55,7 @@ const Header = () => {
 								o
 							</span>
 							<span className="header__nav--effect">
-								<img src={ImgHover} alt="" />
+								<img src={ImgHover} alt="Dinno" loading="lazy" />
 							</span>
 							s</Link>
 						<Link to="/precios" className="header__nav__item text-white min-w-[68px]">Preci
@@ -63,7 +63,7 @@ const Header = () => {
 								o
 							</span>
 							<span className="header__nav--effect">
-								<img src={ImgHover} alt="" />
+								<img src={ImgHover} alt="Dinno" loading="lazy" />
 							</span>
 							s</Link>
 						<Link to="/nosotros" className="header__nav__item text-white min-w-[100px]">Conócen
@@ -71,7 +71,7 @@ const Header = () => {
 								o
 							</span>
 							<span className="header__nav--effect">
-								<img src={ImgHover} alt="" />
+								<img src={ImgHover} alt="" loading="lazy" />
 							</span>
 							s</Link>
 						<Link to="/contacto" className="header__nav__item text-white min-w-[85px]">Contact
@@ -79,7 +79,7 @@ const Header = () => {
 								o
 							</span>
 							<span className="header__nav--effect">
-								<img src={ImgHover} alt="" />
+								<img src={ImgHover} alt="" loading="lazy" />
 							</span>
 						</Link>
 					</div>
