@@ -38,6 +38,7 @@ const Home = () => {
 
 	const animationPropsBanner1 = useSpring({
 		opacity: isVisible ? 1 : 0,
+		transform: isVisible ? 'translateY(0)' : 'translateY(50px)',
 	});
 	const animationPropsBanner2 = useSpring({
 		opacity: isVisibleBanner2 ? 1 : 0,
@@ -77,42 +78,45 @@ const Home = () => {
 							<div className='efect__two--1'></div>
 							<div className='efect__two--2'></div>
 						</div>
-						<div className='text-ppal poppins-medium flex items-center justify-center'>
-							Sé visible
-							<div className='text-ppal--efect ml-10'>
-								<div className='text-ppal--efect__inner'>
-									<div className='text-ppal--efect__content'>
-										<span>crece <HiSparkles /> aumenta <HiCursorArrowRays /> mejora <HiRocketLaunch /></span>
-										<span>crece <HiSparkles /> aumenta <HiCursorArrowRays /> mejora <HiRocketLaunch /></span>
+						<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">
+							<div className='text-ppal poppins-medium flex items-center justify-center'>
+								Sé visible,
+								<div className='text-ppal--efect ml-10'>
+									<div className='text-ppal--efect__inner'>
+										<div className='text-ppal--efect__content'>
+											<span>crece <HiSparkles /> aumenta <HiCursorArrowRays /> mejora <HiRocketLaunch /></span>
+											<span>crece <HiSparkles /> aumenta <HiCursorArrowRays /> mejora <HiRocketLaunch /></span>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div className='text-ppal poppins-medium flex items-center justify-center'>
-							online
-							<div className='text-ppal--info'>
-								Nos especializamos en el diseño y desarrollo de páginas web que no solo impresionan, sino que también impulsan tu negocio hacia el éxito.
+							<div className='text-ppal poppins-medium flex items-center justify-center'>
+								online
+								<div className='text-ppal--info'>
+									Nos especializamos en el diseño y desarrollo de páginas web que no solo impresionan, sino que también impulsan tu negocio hacia el éxito.
+								</div>
 							</div>
-						</div>
-						<div className='text-ppal poppins-medium flex items-center justify-center'>
-							con
-							<div className='text-ppal--efect-two ml-10'>
-								<div className='text-ppal--efect__inner'>
-									<div className='text-ppal--efect__content text-ppal--efect__content--custom'>
-										<span>Dinno <HiMiniHeart /></span>
-										<span>Dinno <HiSparkles /></span>
+							<div className='text-ppal poppins-medium flex items-center justify-center'>
+								con
+								<div className='text-ppal--efect-two ml-10'>
+									<div className='text-ppal--efect__inner'>
+										<div className='text-ppal--efect__content text-ppal--efect__content--custom'>
+											<span>Dinno <HiMiniHeart /></span>
+											<span>Dinno <HiSparkles /></span>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element" id="banner-ppal">
+						</animated.div>
+
+						<div id="banner-ppal">
 							<BannerText
 								subtitle={Textos.main.subtitle}
 								title={Textos.main.title}
 								text={Textos.main.text}
 								buttonsDemo={true}
 							/>
-						</animated.div>
+						</div>
 					</div>
 
 					<div className='banner-principal' id="banner-secondary">

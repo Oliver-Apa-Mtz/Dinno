@@ -17,7 +17,7 @@ export const Textos = {
 	main: {
 		title: 'Sé visible, crece online con Dinno.',
 		subtitle: 'Transformamos tu presencia digital en una poderosa herramienta de crecimiento',
-		text: 'Bienvenido a Dinno, donde convertimos tus sueños en realidad digital. Nos especializamos en el diseño y desarrollo de páginas web que no solo impresionan, sino que también impulsan tu negocio hacia el éxito. ¿Listo para dar el siguiente paso ? '
+		text: 'Bienvenido a Dinno, nos especializamos en el diseño y desarrollo de páginas web que no solo impresionan, sino que también impulsan tu negocio hacia el éxito. ¿Listo para dar el siguiente paso ? '
 	},
 	about: {
 		title: '¡Conoce nuestros planes!',
