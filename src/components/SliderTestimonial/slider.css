@@ -20,6 +20,13 @@
 	background: white;
 	overflow: hidden;
 }
+.sliderTestimonial__item__circle--custom{
+	filter: invert();
+	background-color: black;
+}
+.sliderTestimonial__item__circle .img-custom {
+	width: 55px;
+}
 .slick-dots{
 	bottom: 200px !important;
 }

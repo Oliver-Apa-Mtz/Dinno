@@ -4,8 +4,8 @@ import Feature3 from '../assets/img/icon-3.svg';
 import Feature4 from '../assets/img/icon-4.svg';
 import Feature5 from '../assets/img/icon-5.svg';
 
-import User1 from '../assets/img/user-1.webp';
-import User2 from '../assets/img/user-2.webp';
+import User1 from '../assets/img/logo-moyado.svg';
+import User2 from '../assets/img/logo-strata.png';
 import User3 from '../assets/img/user-3.webp';
 
 import People1 from '../assets/img/people-1.webp';
@@ -97,14 +97,14 @@ export const DataTestimonial = [
 	},
 	{
 		id: 2,
-		name: 'Carlos González, Emprendedor en busca de clientes',
+		name: 'Moyado - Despacho contable en Guadalajara',
 		text: '¡Estamos encantados con el equipo de Dinno! Gracias a ellos, nuestra landing page ahora está generando más leads. ¡Estamos muy emocionados!',
 		image: User1,
 		color: '#FBF7B8',
 	},
 	{
 		id: 3,
-		name: 'Laura Martínez, Fundadora de una startup tecnológica',
+		name: 'Strata - Soluciones inmobiliarias de alto valor en Mazatlán, Sinaloa',
 		text: '¡Dinno es increíble! Su enfoque centrado en el cliente y su creatividad nos sorprendieron. ¡Gracias por todo!',
 		image: User2,
 		color: '#D9FFD8',

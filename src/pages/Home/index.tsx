@@ -57,6 +57,15 @@ const Home = () => {
 		transform: isVisibleBanner5 ? 'translateY(0)' : 'translateY(50px)',
 	});
 
+	const waveAnimation = useSpring({
+		from: { transform: 'translateX(0%)' },
+		to: { transform: 'translateX(-50%)' },
+		config: { duration: 10000 }, // Duración de la animación
+		reset: true,
+		reverse: false, // Controla la dirección
+		loop: { reverse: true }, // Hace que la animación regrese
+	});
+
 	useEffect(() => {
 		setIsVisible(true);
 		window.addEventListener('scroll', handleScroll);
@@ -116,6 +125,21 @@ const Home = () => {
 								text={Textos.main.text}
 								buttonsDemo={true}
 							/>
+						</div>
+
+						<div className='wave-background bg-gray relative'>
+							<animated.div className="wave" style={waveAnimation}>
+								<svg
+									viewBox="0 0 2400 300" // SVG más grande
+									preserveAspectRatio="none"
+									className="wave-svg"
+								>
+									<path
+										d="M0,200 C300,100 600,300 900,200 C1200,100 1500,300 1800,200 C2100,100 2400,200 2400,300 L0,300 Z"
+										fill="white"
+									/>
+								</svg>
+							</animated.div>
 						</div>
 					</div>
 
@@ -233,6 +257,23 @@ const Home = () => {
 							<BannerCall secondary={true} />
 						</div>
 					</div>
+
+					{/*<div className='wave-container relative'>
+						<div className='wave-background relative'>
+							<animated.div className="wave" style={waveAnimation}>
+								<svg
+									viewBox="0 0 2400 300" // SVG más grande
+									preserveAspectRatio="none"
+									className="wave-svg"
+								>
+									<path
+										d="M0,200 C300,100 600,300 900,200 C1200,100 1500,300 1800,200 C2100,100 2400,200 2400,300 L0,300 Z"
+										fill="white"
+									/>
+								</svg>
+							</animated.div>
+						</div>
+					</div>*/}
 				</div>
 			}
 		</Layout>

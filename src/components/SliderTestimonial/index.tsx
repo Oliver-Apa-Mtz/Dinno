@@ -63,7 +63,7 @@ const SliderTestimonial = ({ data }: Props) => {
 			<div className='sliderTestimonial__container'>
 				<Slider {...settings}>
 					{data.map((item) => (
-						<Testimonial key={item.id} name={item.name} text={item.text} image={item.image} color={item.color} />
+						<Testimonial key={item.id} name={item.name} text={item.text} image={item.image} color={item.color} id={item.id} />
 					))}
 				</Slider>
 			</div>

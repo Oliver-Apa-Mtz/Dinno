@@ -25,17 +25,19 @@
 	width: 34%;
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 25px;
 	justify-content: center;
 	transition: all .3s;
 }
 .header__nav__item{
 	position: relative;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 	transition: all .3s;
+	letter-spacing: .5px;
+	border-bottom: 1px solid transparent;
 }
 .header__buttons{
 	width: 33%;
@@ -61,23 +63,16 @@
 }
 .header__nav--effect{
 	position: absolute;
-	right: 12px;
-	opacity: 0;
-	visibility: hidden;
+	right: 8px;
+	opacity: 1;
+	/*visibility: hidden;*/
 	transform: scale(0.9);
 	transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
 	width: 20px;
 	filter: invert(100%) brightness(100%);
 }
-.header__nav__item:hover .header__nav--hide-hover {
-	display: none;
-}
-.header__nav__item:hover .header__nav--effect {
-	position: relative;
-	right: unset;
-	opacity: 1;
-	visibility: visible;
-	transform: scale(1);
+.header__nav__item:hover {
+	border-color: white;
 }
 .fixed .header__nav--effect{
 	filter: none;

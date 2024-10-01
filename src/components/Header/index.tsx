@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './header.css';
 import Button from '../Button';
 import Logo from '../../assets/img/logo.webp';
-import ImgHover from '../../assets/img/eye.webp';
 import { RiMenu4Fill } from "react-icons/ri";
 
 const Header = () => {
@@ -50,38 +49,10 @@ const Header = () => {
 						</Link>
 					</div>
 					<div className='header__nav'>
-						<Link to="/servicios" className="header__nav__item text-white min-w-[82px]">Servici
-							<span className='header__nav--hide-hover'>
-								o
-							</span>
-							<span className="header__nav--effect">
-								<img src={ImgHover} alt="Dinno" loading="lazy" />
-							</span>
-							s</Link>
-						<Link to="/precios" className="header__nav__item text-white min-w-[68px]">Preci
-							<span className='header__nav--hide-hover'>
-								o
-							</span>
-							<span className="header__nav--effect">
-								<img src={ImgHover} alt="Dinno" loading="lazy" />
-							</span>
-							s</Link>
-						<Link to="/nosotros" className="header__nav__item text-white min-w-[100px]">Conócen
-							<span className='header__nav--hide-hover'>
-								o
-							</span>
-							<span className="header__nav--effect">
-								<img src={ImgHover} alt="" loading="lazy" />
-							</span>
-							s</Link>
-						<Link to="/contacto" className="header__nav__item text-white min-w-[85px]">Contact
-							<span className='header__nav--hide-hover'>
-								o
-							</span>
-							<span className="header__nav--effect">
-								<img src={ImgHover} alt="" loading="lazy" />
-							</span>
-						</Link>
+						<Link to="/servicios" className="header__nav__item text-white min-w-[82px]">Servicios</Link>
+						<Link to="/precios" className="header__nav__item text-white min-w-[68px]">Precios</Link>
+						<Link to="/nosotros" className="header__nav__item text-white min-w-[100px]">Conócenos</Link>
+						<Link to="/contacto" className="header__nav__item text-white min-w-[85px]">Contacto</Link>
 					</div>
 					<div className='header__buttons'>
 						<Button text={'Solícita un Demo'} type={'third'} action={'contacto'} />
